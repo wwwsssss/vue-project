@@ -1,27 +1,13 @@
 <template>
-  <div id="app"> 
-  	<div @click='handleClick'>{{message}}</div>
-  </div>
+  <router-view></router-view>
 </template>
 
 <script>
 export default {
-  name: 'App',
-  data() {
-  	return {
-  		message: 'hello world'
-  	}
-  },
-  methods: {
-  	handleClick() {
-  		this.message = 'bye world'
-  	}
-  }
+  name: 'App'
 }
 </script>
 
 <style>
-	#app{
-		color: red;
-	}
+	
 </style>
